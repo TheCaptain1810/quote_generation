@@ -1,0 +1,95 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+:root {
+  --background-color: #333333; /* Initial dark background color */
+  --text-color: #ffffff; /* Initial text color */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 1s ease, color 1s ease;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff; /* Container background remains white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 600px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  text-align: center;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  overflow: hidden; /* Ensures content overflow is hidden */
+}
+
+.quote-box {
+  margin: 10px 0;
+  flex-grow: 1; /* Allows the quote-box to grow and shrink as necessary */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  transition: color 0.5s ease;
+}
+
+.author {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+}
+
+.button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.new-quote-button {
+  width: 100px; /* Adjusted width */
+}
+
+.credit {
+  margin-top: 20px;
+  font-size: 0.8em;
+}
