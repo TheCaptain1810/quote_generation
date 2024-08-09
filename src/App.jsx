@@ -63,7 +63,8 @@ const App = () => {
       <div className="quote-box">
         <p className="quote">“{quote.text}”</p>
         <p className="author">- {quote.author}</p>
-        <div className="buttons">
+      </div>
+      <div className="buttons">
           <div className="social-buttons">
             <button className="button" style={{ backgroundColor: theme.background, color: theme.text }} onClick={shareOnTwitter}>
               <i className="fab fa-twitter"></i>
@@ -74,7 +75,6 @@ const App = () => {
           </div>
           <button className="button new-quote-button" style={{ backgroundColor: theme.background, color: theme.text }} onClick={handleNewQuote}>New quote</button>
         </div>
-      </div>
       <p className="credit">by The Captain</p>
     </div>
   );
